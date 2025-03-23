@@ -120,7 +120,6 @@ obj_copy.value = 10
 obj_deepcopy = copy.deepcopy(obj)
 obj_deepcopy.value = 20
 print(obj.value, obj_copy.value, obj_deepcopy.value)
-'''
 
 # LR12-3
 import copy
@@ -150,3 +149,39 @@ copy_person = copy_class_person(person)
 
 print(copy_person == person)  # False
 print(copy_person.name == person.name)  # True
+
+
+def greet(name):
+    print(f"Привіт, {name}!")
+
+
+greet("Марія")
+print(greet)
+
+
+class Fish:
+
+    def swim(self):
+
+        print("Риба плаває")
+
+    def be_awesome(self):
+
+        print("Риба гарна")
+
+
+my_fish = Fish()
+
+
+my_fish.swim()  # Риба плаває
+my_fish.be_awesome()  # Риба гарна
+print(my_fish)  # <__main__.Fish object at 0x10ba9e900>
+'''
+
+
+def greeting(name):
+    print(f"Hello, {name}")
+
+
+greeting("Maria")
+print(greeting)
